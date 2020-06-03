@@ -1,4 +1,8 @@
 @media (max-width: 480px) {
+  body{
+    
+    background-color: black;
+  }
   .main {
     flex-direction: column;
     height: 100vh;
@@ -25,6 +29,7 @@
     filter: grayscale(0.4);
     background-size: cover;
     background-attachment: fixed;
+    height: 20rem;
   }
   .ab {
     position: absolute;
@@ -48,6 +53,7 @@
     position: relative;
     background-size: cover;
     background-attachment: fixed;
+    height: 20rem;
   }
 
   .logo {
@@ -56,7 +62,7 @@
     position: relative;
     filter: blur(0.5);
     background: url("https://source.unsplash.com/random/1920x1080");
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     background-position: center;
     width: 100%;
