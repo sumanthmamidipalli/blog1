@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  position: relative;
+}
+.logo {
+  font-family: "Montserrat", sans-serif;
+  /* position: absolute;
+  top: 5rem;
+  left: 5rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+  margin-top: 5.4rem;
+  align-self: baseline;
+  animation: intro 3s linear;
+}
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.profile {
+  width: 75px;
+  height: 75px;
+  border-radius: 40px;
+  border: 1px solid black;
+  /* background-image: url("https://source.unsplash.com/random/80x80"); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  color: darkgrey;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+.email {
+  margin-top: 0.4rem;
+  color: rgb(71, 132, 245);
+}
+.phone {
+  color: gray;
+  font-weight: 400;
+  margin-top: 0.4rem;
+}
+
+.main {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin-right: 3rem;
+  background-color: rgb(255, 255, 255);
+  color: #fff;
+  width: 40%;
+  min-height: 75vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  grid-gap: 6px;
+}
+.bg1:hover,
+.bg2:hover {
+  backdrop-filter: blur(0.9);
+  -webkit-backdrop-filter: blur(0.9);
+  filter: hue-rotate(180deg);
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+.about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+/* .aboutclose {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+} */
+.ab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+.bg1 > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  animation: intro 3s linear;
+  font-weight: 600;
+}
+.bg1 {
+  filter: grayscale(0.4);
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://source.unsplash.com/random/1360x760");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bg2 {
+  filter: grayscale(0.4);
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  background: url("https://source.unsplash.com/random/1360x760");
+  background-size: cover;
+  background-attachment: fixed;
+}
